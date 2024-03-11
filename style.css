@@ -58,14 +58,14 @@ body {
 }
 .download {
     width: 100%;
-    height: 650px;
+    min-height: 650px;
     padding-top: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
 }
-.download >p{
+.download > p{
     width: 44%;
     text-align: center;
 }
@@ -99,7 +99,7 @@ body {
 }
 .keepTrack {
     width: 100%;
-    height: 950px;
+    min-height: 950px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +139,7 @@ body {
 }
 .accessClipboard {
     width: 100%;
-    height: 850px;
+    min-height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,7 +156,7 @@ body {
 }
 .supercharge {
     width: 100%;
-    height: 750px;
+    min-height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,7 +193,7 @@ body {
 }
 .clipboardMac {
     width: 100%;
-    height: 460px;
+    min-height: 460px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -210,7 +210,7 @@ footer {
 }
 .foot {
     width: 100%;
-    height: 148px;
+    min-height: 148px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,4 +239,131 @@ footer {
 .redes img {
     width: 20px;
     height: auto;
+}
+
+@media (max-width: 420px) {
+    h1 {
+        margin-top: 32px;
+        font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 2rem;
+        color: var(--n01);
+    }
+    p {
+        font-size: 1.03rem;
+        line-height: 1.8rem;
+        color: var(--n02);
+    }
+    hr {
+        display: none;
+    }
+    body {
+        background-image: url('./images/bg-header-mobile.png');
+    }
+
+    /* CONTENEDORES HTML */
+    .contenedorMain {
+        max-width: 315px;
+        gap: 200px;
+        text-align: center;
+    }
+    .download {
+        height: fit-content;
+        padding-top: 100px;
+    }
+    .download > p{
+        width: 100%;
+        text-align: center;
+    }
+    .downloadButton {
+        width: 100%;
+        }
+    .keepTrack > p {
+        width: 100%;
+    }
+    .keepTrackSubCont {
+        padding-top: 30px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+    }
+    .macImg img {
+        min-width: 100%;
+        width: 100%;
+    }
+    .keepTrackCaracteristicas {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .caracteristicaKeepTrack {
+        gap: 20px;
+    }
+    .accessClipboard {
+        min-height: 450px;
+        height: fit-content;
+    }
+    .accessClipboard > p {
+        width: 100%;
+        height: fit-content;
+        font-size: 1rem;
+        letter-spacing: none;
+        line-height: none;
+    }
+    .tabletMobileDevices {
+        padding-top: 16px;
+        width: 100%;
+    }
+    .tabletMobileDevices img {
+        width: 100%;
+    }
+    .superchargeCaracteristicas {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        gap: 60px;
+        padding: 0;
+    }
+    .caracteristicaSupercharge {
+        gap: 20px;
+    }
+    .superchargeEmpresas {
+        padding-top: 80px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .clipboardMac {
+        margin-bottom: 120px;
+    }
+    .clipboardMac > p {
+        width: 100%;
+        line-height: none;
+    }
+
+    /* PIE DE PAGINA */
+    .foot {
+        padding: 40px 0;
+        height: fit-content;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .facs{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        gap: 20px;
+        color: var(--n02);
+    }
+    .facs p {
+        font-weight: 600;
+    }
+    .redes {
+        gap: 32px;
+        margin-left: 0;
+    }
 }
